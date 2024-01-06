@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Cycle !!</title>
+</head>
+<body>
+    <h1> Full Cycle</h1>        
+        <table>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+        </tr>
+        <tbody>
+            <%
+            if(data.length!=0){
+                var i=1;
+                data.forEach(function(data){
+            %>
+            <tr>
+                <th scope="row"><%=data.id%></th>
+                <td><%=data.name%></td>
+            </tr>        
+            <%})}%>
+        </tbody>
+        </table>    
+</body>
+</html>
